@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-cli"
+description = "Python CLI template"
+requires-python = ">=3.8"
+version = "0.0.1"
+dependencies = [
+    'click'
+]
+
+[project.optional-dependencies]
+dev = ["autopep8","flake8"]
+
+[project.scripts]
+cli = "cli.root:root"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
+# exclude = ["mypackage.tests*"]
+namespaces = true
