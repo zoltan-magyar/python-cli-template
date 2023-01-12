@@ -5,6 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "python-cli"
 description = "Python CLI template"
+readme = "README.md"
+keywords = ["cli", "template"]
+license = {text = "MIT"}
+classifiers = [
+    "Framework :: Click",
+    "Programming Language :: Python :: 3",
+]
 requires-python = ">=3.8"
 version = "0.0.1"
 dependencies = [
